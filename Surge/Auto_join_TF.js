@@ -1,5 +1,5 @@
 !(async () => {
-ids = $persistentStore.read('APP_ID')
+ids =  ['u6iogfd0'];
 if (ids == '') {
   $notification.post('所有TF已加入完毕','模块已自动关闭','')
   $done($httpAPI('POST', '/v1/modules', {'Auto module for JavaScripts': 'false'}))
