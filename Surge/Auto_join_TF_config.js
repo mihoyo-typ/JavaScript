@@ -3,7 +3,7 @@
 	  
 ids = $persistentStore.read('APP_ID')
 
-ids = 'u6iogfd0'
+//ids = 'u6iogfd0'
 if (ids == '') {
   $notification.post('所有TF已加入完毕','模块已自动关闭','')
   $done($httpAPI('POST', '/v1/modules', {'Auto module for JavaScripts': 'false'}))
@@ -53,7 +53,7 @@ function autoPost(ID) {
 				else {
 					        if (resp.status==401) {
 										
-										$notification.post('令牌过期')
+										$notification.post('401')
           resolve();
 					
 					return
@@ -97,3 +97,4 @@ function autoPost(ID) {
     })
   })
 }
+
