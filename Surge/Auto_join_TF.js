@@ -53,7 +53,7 @@ function autoPost(ID) {
 				else {
 					        if (resp.status==401) {
 										
-										$notification.post('令牌过期')
+										$notification.post('401')
           resolve();
 					
 					return
