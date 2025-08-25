@@ -15,6 +15,8 @@ if (ids == '') {
     await autoPost(ID)
   }
 
+}
+
 
 
 $done()
@@ -100,6 +102,7 @@ function autoPost(ID) {
     })
   })
 }
+
 
 
 
