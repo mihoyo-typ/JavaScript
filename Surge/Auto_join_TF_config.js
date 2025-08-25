@@ -1,5 +1,5 @@
 !(async () => {
-	
+	//开始代码
 	  
 ids = $persistentStore.read('APP_ID')
 
@@ -100,6 +100,7 @@ function autoPost(ID) {
     })
   })
 }
+
 
 
 
