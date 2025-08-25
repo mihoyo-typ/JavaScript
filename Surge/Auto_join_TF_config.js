@@ -1,5 +1,5 @@
 !(async () => {
-	const startTime = Date.now();
+	
 	  
 ids = $persistentStore.read('APP_ID')
 
@@ -14,9 +14,9 @@ if (ids == '') {
   for await (const ID of ids) {
     await autoPost(ID)
   }
-const costTime = Date.now() - startTime;
 
-	console.log(`请求处理完成，耗时：${costTime}ms`);
+
+
 $done()
 })();
 
@@ -100,6 +100,7 @@ function autoPost(ID) {
     })
   })
 }
+
 
 
 
