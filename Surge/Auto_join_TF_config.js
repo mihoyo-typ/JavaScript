@@ -53,7 +53,7 @@ function autoPost(ID) {
 				else {
 					        if (resp.status==401) {
 										
-										$notification.post('401')
+										//$notification.post('401')
           resolve();
 					
 					return
@@ -97,4 +97,5 @@ function autoPost(ID) {
     })
   })
 }
+
 
