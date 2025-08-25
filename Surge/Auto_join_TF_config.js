@@ -54,7 +54,7 @@ function autoPost(ID) {
 					        if (resp.status==401) {
 										
 										/*$notification.post('自动加入失败')*/
-								console.log(ID + ' ' + '加入失败')
+								
           resolve();
 					
 					return
@@ -98,6 +98,7 @@ function autoPost(ID) {
     })
   })
 }
+
 
 
 
