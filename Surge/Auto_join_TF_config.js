@@ -53,7 +53,7 @@ function autoPost(ID) {
 				else {
 					        if (resp.status==401) {
 										
-										//$notification.post('自动加入失败')
+										/*$notification.post('自动加入失败')*/
           resolve();
 					
 					return
@@ -97,6 +97,7 @@ function autoPost(ID) {
     })
   })
 }
+
 
 
 
