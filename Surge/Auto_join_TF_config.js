@@ -50,17 +50,11 @@ function autoPost(ID) {
           $notification.post(ID, '不存在该TF', '已自动删除该APP_ID')
           resolve()
         } 
-				else {
-					        if (resp.status==401) {
-										
-										$notification.post('401')
-								
-          resolve();
-					
-					return
-					
+	 else if (resp.status == 401) {
+          console.log(ID + ' ' + '请求异常，尝试重新加入')
+          resolve()
         }
-					 
+					 else {
           let jsonData = JSON.parse(data)
 						
           if (jsonData.data == null) {
