@@ -15,7 +15,12 @@
     "https://raw.githubusercontent.com/githubdulong/Script/master/Images/testflight.png"
   ],
   "keys": [
-     "APP_ID"
+    "APP_ID",
+    "session_id",
+    "session_digest",
+    "request_id",
+    "tf_ua",
+    "key"
 
    
   ],
